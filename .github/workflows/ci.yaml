@@ -22,3 +22,8 @@ jobs:
       - name: 🧪 Lancer les tests
         run: |
           pytest
+
+      - name: 🧹 Lint du code (flake8)
+        run: |
+         pip install flake8
+         flake8 .
